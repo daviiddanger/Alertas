@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<popup:BasePopupPage  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Alertas.Popup"
+             xmlns:popup="clr-namespace:MauiPopup.Views;assembly=MauiPopup"
+             Title="Popup">
+    <StackLayout BackgroundColor="Yellow" Spacing="25" Padding="20">
+        <Image
+                Source="cumplidos.png"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+        <Label
+                Text="Compra realizada"
+                FontSize="30"
+                HorizontalOptions="Center" />
+
+        <Button x:Name="btnCerrar"  Text="Cerrar" Clicked="btnCerrar_Clicked" ></Button>
+    </StackLayout>
+</popup:BasePopupPage>
